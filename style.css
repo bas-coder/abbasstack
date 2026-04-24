@@ -104,8 +104,26 @@ h3 { font-size: 1.25rem; font-weight: 600; margin-bottom: 8px; }
 
 /* Product of the Week */
 .featured-product { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; padding: 40px; align-items: center;}
-.product-video-placeholder { background: var(--surface-elevated); border: 1px dashed var(--border-strong); border-radius: var(--radius-sm); height: 250px; display: flex; flex-direction: column; align-items: center; justify-content: center; color: var(--text-muted); gap: 12px; font-weight: 600;}
-.play-icon { width: 40px; height: 40px; color: var(--text-muted); }
+.product-video-placeholder { 
+    background-image: linear-gradient(rgba(12, 13, 16, 0.4), rgba(12, 13, 16, 0.8)), url('https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1000&auto=format&fit=crop');
+    background-size: cover;
+    background-position: center;
+    border: 1px solid var(--border-strong); 
+    border-radius: var(--radius-sm); 
+    height: 280px; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    color: var(--text-primary); 
+    gap: 12px; 
+    font-weight: 600;
+    position: relative;
+    box-shadow: var(--shadow-inner);
+}
+.play-icon { width: 48px; height: 48px; color: var(--text-primary); z-index: 2; transition: 0.2s; cursor: pointer; }
+.play-icon:hover { color: var(--accent); transform: scale(1.1); }
+
 
 /* --- Toast Notifications --- */
 .toast-container { position: fixed; bottom: 24px; right: 24px; z-index: 1000; display: flex; flex-direction: column; gap: 12px; }
