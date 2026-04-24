@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AbbasStack | Product Design & Digital Leverage</title>
+    <title>AbbasStack | AI Alpha & Premium Design</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,108 +12,167 @@
 </head>
 <body>
 
+    <div id="toast-container" class="toast-container"></div>
+
     <nav class="glass-nav">
         <div class="nav-container">
-            <a href="#" class="logo">AbbasStack<span style="color: var(--accent);">.</span></a>
+            <a href="#" class="logo">AbbasStack<span class="dot">.</span></a>
             <div class="nav-links" id="navLinks">
-                <a href="#work" class="nav-item">Work With Me</a>
-                <a href="#resources" class="nav-item">Resources</a>
-                <a href="#tools" class="nav-item">Tools</a>
-                <a href="#contact" class="btn btn-primary nav-cta">Book a Sprint</a>
+                <a href="#top-pick" class="nav-item">Product of the Week</a>
+                <a href="#newsletter" class="nav-item">Newsletter</a>
+                <a href="#contact" class="nav-item">Contact</a>
+                <button id="themeToggle" class="icon-btn" aria-label="Toggle Theme">
+                    <i data-lucide="moon" class="moon-icon"></i>
+                    <i data-lucide="sun" class="sun-icon"></i>
+                </button>
+                <a href="https://actionist.framer.website" target="_blank" class="btn btn-primary nav-cta">Design Services</a>
             </div>
-            <button class="mobile-menu-toggle" id="menuToggle" aria-label="Toggle Menu">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
-            </button>
         </div>
     </nav>
 
     <header class="hero section-padding animate-fade-in">
         <div class="hero-content">
-            <a href="#featured" class="dynamic-hook">
+            <a href="#top-pick" class="dynamic-hook">
                 <span class="status-dot"></span>
-                Currently accepting Q3 Lead Design engagements
+                New: See my top AI pick for this week
             </a>
             
-            <h1>High-Fidelity Product Design & Digital Leverage.</h1>
-            <p class="text-muted body-large">Engineering interfaces for SaaS, AI-native tools, and enterprise dashboards. Built for speed, absolute clarity, and revenue scale.</p>
+            <h1>I find the best AI and SaaS tools so you don't have to.</h1>
+            <p class="text-muted body-large">Get the best alpha. Get early updates. Find great products with free trials before anyone else does. And if you need a world-class website, I build those too.</p>
             
             <div class="hero-actions">
-                <a href="#work" class="btn btn-primary">View the Work</a>
-                <a href="#contact" class="btn btn-secondary">Book a Sprint</a>
+                <a href="#newsletter" class="btn btn-primary">Join the Newsletter</a>
+                <a href="https://actionist.framer.website" target="_blank" class="btn btn-secondary">Hire Me for Design</a>
             </div>
             
             <div class="trust-indicators text-muted">
-                <span class="trust-item"><i data-lucide="check-circle" class="icon-sm"></i> UI/UX Architecture</span>
-                <span class="trust-item"><i data-lucide="check-circle" class="icon-sm"></i> Growth-ready pages</span>
-                <span class="trust-item"><i data-lucide="check-circle" class="icon-sm"></i> Scalable Systems</span>
+                <span class="trust-item"><i data-lucide="zap" class="icon-sm"></i> Fast Updates</span>
+                <span class="trust-item"><i data-lucide="gift" class="icon-sm"></i> Free Trials</span>
+                <span class="trust-item"><i data-lucide="layout" class="icon-sm"></i> Top Web Design</span>
+            </div>
+        </div>
+
+        <div class="hero-3d-wrapper">
+            <div class="card-3d" id="interactive-3d">
+                <div class="card-3d-layer base-layer"></div>
+                <div class="card-3d-layer mid-layer">
+                    <div class="mock-chart"></div>
+                    <div class="mock-bar"></div>
+                </div>
+                <div class="card-3d-layer top-layer">
+                    <i data-lucide="cpu" class="icon-large"></i>
+                    <span>System Active</span>
+                </div>
             </div>
         </div>
     </header>
 
-    <section class="capabilities section-padding" id="work">
-        <div class="bento-grid-3">
-            <div class="bento-card surface-elevated scroll-animate delay-1">
-                <div class="card-icon-wrapper">
-                    <i data-lucide="hammer" class="icon-accent"></i>
-                </div>
-                <h3>Build</h3>
-                <p class="text-muted">Product design, high-converting websites, and robust Framer components crafted for scale.</p>
+    <section class="section-padding" id="top-pick">
+        <div class="section-header">
+            <span class="overline">Product of the Week</span>
+            <h2>You should not miss this tool.</h2>
+        </div>
+        <div class="featured-product bento-card scroll-animate">
+            <div class="product-video-placeholder">
+                <i data-lucide="play-circle" class="play-icon"></i>
+                <span>Video Demo Loading...</span>
             </div>
-            
-            <div class="bento-card surface-elevated scroll-animate delay-2">
-                <div class="card-icon-wrapper">
-                    <i data-lucide="trending-up" class="icon-accent"></i>
-                </div>
-                <h3>Grow</h3>
-                <p class="text-muted">Conversion-focused landing pages and automated email capture systems designed to drive revenue.</p>
+            <div class="product-info">
+                <h3>Current Top Pick: AgentFlow AI</h3>
+                <p class="text-muted">This tool does the work of three people. It connects your email to your calendar. It answers clients while you sleep. They have a 14-day free trial right now.</p>
+                <a href="#" class="btn btn-primary" style="margin-top: 16px;">Try it for free</a>
             </div>
-            
-            <div class="bento-card surface-elevated scroll-animate delay-3">
-                <div class="card-icon-wrapper">
-                    <i data-lucide="zap" class="icon-accent"></i>
+        </div>
+    </section>
+
+    <section class="section-padding" id="contact">
+        <div class="bento-grid-2">
+            <div class="bento-card scroll-animate delay-1" id="newsletter">
+                <div class="card-icon-wrapper"><i data-lucide="mail" class="icon-accent"></i></div>
+                <h3>Get the Alpha</h3>
+                <p class="text-muted">I send out one email a week. It has the best tools and the best free trials. No spam. Just pure value.</p>
+                <div class="form-group" style="margin-top: 24px; display: flex; gap: 8px;">
+                    <input type="email" placeholder="Your best email" class="input-field" style="flex: 1;">
+                    <button class="btn btn-primary">Join</button>
                 </div>
-                <h3>Edge</h3>
-                <p class="text-muted">Curated tools, practical insights, and leverage-driven operational systems to keep you ahead.</p>
+            </div>
+
+            <div class="bento-card scroll-animate delay-2">
+                <div class="card-icon-wrapper"><i data-lucide="message-square" class="icon-accent"></i></div>
+                <h3>Let's talk</h3>
+                <p class="text-muted">Want me to review your SaaS product? Need a custom Framer website? Send me an email directly. I reply fast.</p>
+                <a href="mailto:abbas@abbasstack.com" class="btn btn-secondary" style="margin-top: 24px; width: 100%;">abbas@abbasstack.com</a>
             </div>
         </div>
     </section>
 
     <script>
-        // 1. Initialize Lucide Icons
         lucide.createIcons();
 
-        // 2. Mobile Menu Logic
-        const menuToggle = document.getElementById('menuToggle');
-        const navLinks = document.getElementById('navLinks');
+        // --- Theme Toggler Logic ---
+        const themeToggle = document.getElementById('themeToggle');
+        const htmlElement = document.documentElement;
         
-        menuToggle.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-            if(navLinks.classList.contains('active')) {
-                menuToggle.innerHTML = '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>';
+        themeToggle.addEventListener('click', () => {
+            if (htmlElement.classList.contains('dark-theme')) {
+                htmlElement.classList.remove('dark-theme');
+                htmlElement.classList.add('light-theme');
             } else {
-                menuToggle.innerHTML = '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>';
+                htmlElement.classList.remove('light-theme');
+                htmlElement.classList.add('dark-theme');
             }
         });
 
-        // 3. Scroll Reveal Animation Logic
-        const observerOptions = {
-            root: null,
-            rootMargin: '0px',
-            threshold: 0.15
-        };
+        // --- Interactive 3D Object Logic ---
+        const card3d = document.getElementById('interactive-3d');
+        document.addEventListener('mousemove', (e) => {
+            let xAxis = (window.innerWidth / 2 - e.pageX) / 25;
+            let yAxis = (window.innerHeight / 2 - e.pageY) / 25;
+            card3d.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
+        });
 
-        const observer = new IntersectionObserver((entries, observer) => {
+        // --- Fake Social Proof Notification Logic ---
+        const names = ["John", "Sarah", "Mike", "Emma", "David", "Aisha", "Chris"];
+        const locations = ["London", "New York", "Lagos", "Toronto", "Sydney", "Berlin"];
+        const toastContainer = document.getElementById('toast-container');
+
+        function showToast() {
+            const randomName = names[Math.floor(Math.random() * names.length)];
+            const randomLocation = locations[Math.floor(Math.random() * locations.length)];
+            
+            const toast = document.createElement('div');
+            toast.className = 'toast';
+            toast.innerHTML = `<i data-lucide="user-check" style="color: var(--accent); width: 16px;"></i> <span style="font-size: 0.875rem;"><b>${randomName}</b> from ${randomLocation} just joined the newsletter.</span>`;
+            
+            toastContainer.appendChild(toast);
+            lucide.createIcons();
+
+            // Slide in
+            setTimeout(() => toast.classList.add('show'), 100);
+            
+            // Remove after 4 seconds
+            setTimeout(() => {
+                toast.classList.remove('show');
+                setTimeout(() => toast.remove(), 500);
+            }, 4000);
+        }
+
+        // Run once between 5 to 10 minutes (300000ms to 600000ms)
+        setInterval(showToast, Math.floor(Math.random() * (600000 - 300000 + 1) + 300000));
+        
+        // For testing purposes, uncomment this line to see it pop up every 5 seconds:
+        // setInterval(showToast, 5000);
+
+        // --- Scroll Animation Logic ---
+        const observer = new IntersectionObserver((entries, obs) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     entry.target.classList.add('is-visible');
-                    observer.unobserve(entry.target); 
+                    obs.unobserve(entry.target); 
                 }
             });
-        }, observerOptions);
-
-        document.querySelectorAll('.scroll-animate').forEach(el => {
-            observer.observe(el);
-        });
+        }, { threshold: 0.15 });
+        document.querySelectorAll('.scroll-animate').forEach(el => observer.observe(el));
     </script>
 </body>
 </html>
