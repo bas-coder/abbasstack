@@ -1,68 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark-theme">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AbbasStack | Design & Digital Leverage</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <nav class="glass-nav">
         <div class="nav-container">
-            <div class="logo">AbbasStack.</div>
-            <div class="nav-links">
-                <a href="#work">Work With Me</a>
-                <a href="#resources">Resources</a>
-                <a href="#tools">Tools</a>
+            <a href="#" class="logo">AbbasStack.</a>
+            <div class="nav-links" id="navLinks">
+                <a href="#work" class="nav-item">Work With Me</a>
+                <a href="#resources" class="nav-item">Resources</a>
+                <a href="#tools" class="nav-item">Tools</a>
+                <a href="#contact" class="btn btn-primary nav-cta">Work With Me</a>
             </div>
-            <a href="#contact" class="btn btn-primary">Work With Me</a>
+            <button class="mobile-menu-toggle" id="menuToggle" aria-label="Toggle Menu">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+            </button>
         </div>
     </nav>
 
-    <header class="hero section-padding">
+    <header class="hero section-padding animate-fade-in">
         <div class="hero-content">
             <span class="overline">Build sharper digital systems</span>
             <h1>Design, growth assets, and digital leverage for modern operators.</h1>
-            <p class="text-muted">AbbasStack helps you build stronger pages, discover better tools, and access products and resources built for clarity, speed, and growth.</p>
+            <p class="text-muted body-large">AbbasStack helps you build stronger pages, discover better tools, and access products and resources built for clarity, speed, and growth.</p>
             
             <div class="hero-actions">
-                <a href="#guide" class="btn btn-primary">Get the Free Guide</a>
+                <a href="#resources" class="btn btn-primary">Get the Free Guide</a>
                 <a href="#work" class="btn btn-secondary">Explore the Site</a>
             </div>
-            <ul class="trust-bullets text-muted">
-                <li>Design systems</li>
-                <li>Growth-ready pages</li>
-                <li>Tools & products</li>
-            </ul>
-        </div>
-        
-        <div class="hero-visual">
-            <div class="bento-card visual-card-1 glass-surface"></div>
-            <div class="bento-card visual-card-2 glass-surface"></div>
+            
+            <div class="trust-indicators text-muted">
+                <span class="trust-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Design systems</span>
+                <span class="trust-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Growth-ready pages</span>
+                <span class="trust-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Tools & products</span>
+            </div>
         </div>
     </header>
 
-    <section class="capabilities section-padding">
-        <div class="bento-grid-3">
-            <div class="bento-card surface-1">
-                <div class="card-icon">⚡</div>
+    <section class="capabilities section-padding" id="work">
+        <div class="bento-grid-3 stagger-animate">
+            <div class="bento-card surface-elevated">
+                <div class="card-icon-wrapper">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                </div>
                 <h3>Build</h3>
-                <p class="text-muted">Product design, high-converting websites, and robust Framer components.</p>
+                <p class="text-muted">Product design, high-converting websites, and robust Framer components crafted for scale.</p>
             </div>
-            <div class="bento-card surface-1">
-                <div class="card-icon">📈</div>
+            <div class="bento-card surface-elevated">
+                <div class="card-icon-wrapper">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg>
+                </div>
                 <h3>Grow</h3>
-                <p class="text-muted">Conversion-focused pages and email capture systems for scaling.</p>
+                <p class="text-muted">Conversion-focused landing pages and email capture systems designed to drive revenue.</p>
             </div>
-            <div class="bento-card surface-1">
-                <div class="card-icon">🎯</div>
+            <div class="bento-card surface-elevated">
+                <div class="card-icon-wrapper">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2v20M2 12h20"/></svg>
+                </div>
                 <h3>Edge</h3>
-                <p class="text-muted">Curated tools, practical insights, and leverage-driven thinking.</p>
+                <p class="text-muted">Curated tools, practical insights, and leverage-driven thinking to keep you ahead.</p>
             </div>
         </div>
     </section>
 
+    <script>
+        // Mobile Menu Logic
+        const menuToggle = document.getElementById('menuToggle');
+        const navLinks = document.getElementById('navLinks');
+        
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            if(navLinks.classList.contains('active')) {
+                menuToggle.innerHTML = '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>';
+            } else {
+                menuToggle.innerHTML = '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>';
+            }
+        });
+    </script>
 </body>
 </html>
+
