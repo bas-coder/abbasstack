@@ -3,22 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AbbasStack | Design & Digital Leverage</title>
+    <title>AbbasStack | Product Design & Digital Leverage</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
 
     <nav class="glass-nav">
         <div class="nav-container">
-            <a href="#" class="logo">AbbasStack.</a>
+            <a href="#" class="logo">AbbasStack<span style="color: var(--accent);">.</span></a>
             <div class="nav-links" id="navLinks">
                 <a href="#work" class="nav-item">Work With Me</a>
                 <a href="#resources" class="nav-item">Resources</a>
                 <a href="#tools" class="nav-item">Tools</a>
-                <a href="#contact" class="btn btn-primary nav-cta">Work With Me</a>
+                <a href="#contact" class="btn btn-primary nav-cta">Book a Sprint</a>
             </div>
             <button class="mobile-menu-toggle" id="menuToggle" aria-label="Toggle Menu">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
@@ -28,51 +29,60 @@
 
     <header class="hero section-padding animate-fade-in">
         <div class="hero-content">
-            <span class="overline">Build sharper digital systems</span>
-            <h1>Design, growth assets, and digital leverage for modern operators.</h1>
-            <p class="text-muted body-large">AbbasStack helps you build stronger pages, discover better tools, and access products and resources built for clarity, speed, and growth.</p>
+            <a href="#featured" class="dynamic-hook">
+                <span class="status-dot"></span>
+                Currently accepting Q3 Lead Design engagements
+            </a>
+            
+            <h1>High-Fidelity Product Design & Digital Leverage.</h1>
+            <p class="text-muted body-large">Engineering interfaces for SaaS, AI-native tools, and enterprise dashboards. Built for speed, absolute clarity, and revenue scale.</p>
             
             <div class="hero-actions">
-                <a href="#resources" class="btn btn-primary">Get the Free Guide</a>
-                <a href="#work" class="btn btn-secondary">Explore the Site</a>
+                <a href="#work" class="btn btn-primary">View the Work</a>
+                <a href="#contact" class="btn btn-secondary">Book a Sprint</a>
             </div>
             
             <div class="trust-indicators text-muted">
-                <span class="trust-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Design systems</span>
-                <span class="trust-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Growth-ready pages</span>
-                <span class="trust-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Tools & products</span>
+                <span class="trust-item"><i data-lucide="check-circle" class="icon-sm"></i> UI/UX Architecture</span>
+                <span class="trust-item"><i data-lucide="check-circle" class="icon-sm"></i> Growth-ready pages</span>
+                <span class="trust-item"><i data-lucide="check-circle" class="icon-sm"></i> Scalable Systems</span>
             </div>
         </div>
     </header>
 
     <section class="capabilities section-padding" id="work">
-        <div class="bento-grid-3 stagger-animate">
-            <div class="bento-card surface-elevated">
+        <div class="bento-grid-3">
+            <div class="bento-card surface-elevated scroll-animate delay-1">
                 <div class="card-icon-wrapper">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                    <i data-lucide="hammer" class="icon-accent"></i>
                 </div>
                 <h3>Build</h3>
                 <p class="text-muted">Product design, high-converting websites, and robust Framer components crafted for scale.</p>
             </div>
-            <div class="bento-card surface-elevated">
+            
+            <div class="bento-card surface-elevated scroll-animate delay-2">
                 <div class="card-icon-wrapper">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg>
+                    <i data-lucide="trending-up" class="icon-accent"></i>
                 </div>
                 <h3>Grow</h3>
-                <p class="text-muted">Conversion-focused landing pages and email capture systems designed to drive revenue.</p>
+                <p class="text-muted">Conversion-focused landing pages and automated email capture systems designed to drive revenue.</p>
             </div>
-            <div class="bento-card surface-elevated">
+            
+            <div class="bento-card surface-elevated scroll-animate delay-3">
                 <div class="card-icon-wrapper">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2v20M2 12h20"/></svg>
+                    <i data-lucide="zap" class="icon-accent"></i>
                 </div>
                 <h3>Edge</h3>
-                <p class="text-muted">Curated tools, practical insights, and leverage-driven thinking to keep you ahead.</p>
+                <p class="text-muted">Curated tools, practical insights, and leverage-driven operational systems to keep you ahead.</p>
             </div>
         </div>
     </section>
 
     <script>
-        // Mobile Menu Logic
+        // 1. Initialize Lucide Icons
+        lucide.createIcons();
+
+        // 2. Mobile Menu Logic
         const menuToggle = document.getElementById('menuToggle');
         const navLinks = document.getElementById('navLinks');
         
@@ -83,6 +93,26 @@
             } else {
                 menuToggle.innerHTML = '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>';
             }
+        });
+
+        // 3. Scroll Reveal Animation Logic
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.15
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    observer.unobserve(entry.target); 
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.scroll-animate').forEach(el => {
+            observer.observe(el);
         });
     </script>
 </body>
