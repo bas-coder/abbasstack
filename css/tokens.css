@@ -1,0 +1,80 @@
+:root {
+  --canvas: #f3f0e9;
+  --surface-soft: #ebe6dc;
+  --surface-card: #ffffff;
+  --surface-elevated: #ffffff;
+  --surface-card-alt: #221f1d;
+  --ink: #1c140f;
+  --body: #4a4038;
+  --body-strong: #1c140f;
+  --muted: #7a6f65;
+  --muted-soft: #a89f96;
+  --hairline: rgba(28, 20, 15, 0.08);
+  --hairline-strong: rgba(28, 20, 15, 0.14);
+  --link: #1d4ed8;
+  --link-hover: #1e40af;
+  --accent: #ff7a18;
+  --accent-soft: rgba(255, 122, 24, 0.14);
+  --warning: #d4a017;
+  --success: #34d399;
+  --hero-glow: rgba(255, 168, 112, 0.35);
+  --glass: rgba(255, 255, 255, 0.78);
+  --shadow: 0 22px 50px rgba(28, 20, 15, 0.14);
+  --shadow-soft: 0 12px 32px rgba(28, 20, 15, 0.08);
+  --shadow-card: 0 18px 40px rgba(28, 20, 15, 0.12);
+  --nav-bg: rgba(243, 240, 233, 0.82);
+  --button-fill: #1c140f;
+  --button-text: #f3f0e9;
+  --button-outline: #1c140f;
+  --gold: #d4a017;
+  --chip-bg: rgba(255, 255, 255, 0.86);
+  --radius-card: 20px;
+  --radius-stage: 28px;
+  --radius-pill: 999px;
+  --dot-grid: radial-gradient(circle at 1px 1px, rgba(28, 20, 15, 0.08) 1px, transparent 0);
+  --mesh:
+    radial-gradient(circle at 92% 8%, rgba(255, 168, 112, 0.55), transparent 42%),
+    radial-gradient(circle at 78% 22%, rgba(255, 196, 160, 0.28), transparent 36%),
+    radial-gradient(circle at 8% 94%, rgba(176, 206, 230, 0.42), transparent 40%),
+    radial-gradient(circle at 22% 78%, rgba(196, 208, 228, 0.22), transparent 34%),
+    radial-gradient(circle at 52% 48%, rgba(255, 255, 255, 0.65), transparent 48%);
+}
+
+[data-theme="dark"] {
+  --canvas: #000000;
+  --surface-soft: #0d0d0d;
+  --surface-card: #141414;
+  --surface-elevated: #1f1f1f;
+  --surface-card-alt: #141414;
+  --ink: #ffffff;
+  --body: #cccccc;
+  --body-strong: #e6e6e6;
+  --muted: #999999;
+  --muted-soft: #666666;
+  --hairline: #262626;
+  --hairline-strong: #3a3a3a;
+  --link: #c3d9f3;
+  --link-hover: #dbeafe;
+  --accent: #c3d9f3;
+  --accent-soft: rgba(195, 217, 243, 0.08);
+  --warning: #d4a017;
+  --success: #5fa657;
+  --hero-glow: rgba(195, 217, 243, 0.06);
+  --glass: rgba(13, 13, 13, 0.82);
+  --shadow: 0 24px 80px rgba(0, 0, 0, 0.45);
+  --shadow-soft: 0 8px 32px rgba(0, 0, 0, 0.35);
+  --shadow-card: 0 18px 40px rgba(0, 0, 0, 0.32);
+  --nav-bg: rgba(0, 0, 0, 0.78);
+  --button-fill: #ffffff;
+  --button-text: #000000;
+  --button-outline: #ffffff;
+  --gold: #d4a017;
+  --chip-bg: #141414;
+  --radius-card: 0px;
+  --radius-stage: 0px;
+  --dot-grid: radial-gradient(circle at 1px 1px, rgba(255, 255, 255, 0.06) 1px, transparent 0);
+  --mesh:
+    radial-gradient(circle at 20% 20%, rgba(195, 217, 243, 0.08), transparent 42%),
+    radial-gradient(circle at 80% 0%, rgba(95, 166, 87, 0.06), transparent 38%),
+    radial-gradient(circle at 50% 100%, rgba(212, 160, 23, 0.05), transparent 40%);
+}

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eris - Personal Forex Research Bot | AbbasStack</title>
+  <meta name="description" content="Eris is a personal demo forex bot by AbbasStack. Read-only Open API for account data. FIX trading on own IC Markets demo. No third-party users.">
+  <link rel="icon" type="image/png" href="/assets/favicon.png">
+  <link rel="apple-touch-icon" href="/assets/favicon.png">
+  <link rel="stylesheet" href="/css/tokens.css">
+  <link rel="stylesheet" href="/css/main.css">
+  <script src="/js/theme.js" defer></script>
+</head>
+<body>
+  <header class="site-nav">
+    <div class="container nav-inner">
+      <a class="brand" href="/">
+        <img src="/assets/favicon.png" alt="AbbasStack mark">
+        <span>AbbasStack</span>
+      </a>
+      <nav class="nav-links">
+        <a href="/">Home</a>
+        <a href="#overview">Overview</a>
+        <a href="/eris.html" class="nav-eris">🔥 Eris</a>
+        <a href="#api">Open API</a>
+        <a href="#privacy">Privacy</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch theme">
+          <span data-theme-icon>☾</span>
+        </button>
+        <a class="btn btn-primary" href="#contact">Contact</a>
+        <button class="mobile-toggle" type="button" data-nav-toggle aria-label="Open menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <p class="breadcrumb"><a href="/">Home</a> / Eris</p>
+        <p class="eyebrow">Personal research system</p>
+        <h1 class="display-xl">
+          <span class="hero-line"><span>Eris</span></span>
+        </h1>
+        <p class="lead">A self-learning forex bot for one demo account. It trades, logs every move, and improves each day. Not sold to the public.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#api">Open API details</a>
+          <a class="btn btn-secondary" href="mailto:abbas.alabura@gmail.com?subject=Eris%20Open%20API">Email Abbas</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="overview">
+      <div class="container split">
+        <div class="reveal">
+          <p class="eyebrow">What it does</p>
+          <h2 class="display-md">Trade. Learn. Repeat.</h2>
+          <div class="steps" style="margin-top: 24px;">
+            <div class="step"><div><strong>Live EUR/USD scalping</strong><p>VWAP fade rules with hard risk guards on a demo account.</p></div></div>
+            <div class="step"><div><strong>Daily self-improve</strong><p>End-of-day exams test new settings on history before any live change.</p></div></div>
+            <div class="step"><div><strong>Full journal</strong><p>Every open, close, and reject is logged for review.</p></div></div>
+          </div>
+        </div>
+        <div class="hero-stage reveal" style="min-height: 380px;">
+          <span class="stage-cue">✦</span>
+          <span class="stage-pill">Risk capped · 2 max</span>
+          <div class="stage-card stage-card--back">
+            <img src="/assets/eris-chart.png" alt="Eris EUR/USD chart visualization">
+          </div>
+          <div class="stage-card stage-card--front">
+            <pre>[WATCH] IN_TRADE BUY 0.11 lots
+SL 1.16691 · TP 1.16891
+Margin guard active
+Daily exam scheduled UTC</pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-tight" id="api">
+      <div class="container">
+        <div class="section-head center reveal">
+          <p class="eyebrow">cTrader Open API</p>
+          <h2 class="display-lg">Read-only account access</h2>
+          <p class="lead">Eris uses Open API for balance, equity, and unrealized P&amp;L. Scope: Account info only. No trading via Open API.</p>
+        </div>
+        <div class="spec-grid reveal">
+          <div class="spec"><strong>Who uses it?</strong><p>Only the account owner. No third-party users. No public sign-up.</p></div>
+          <div class="spec"><strong>What data is read?</strong><p>Balance, equity, net unrealized P&amp;L, and open position count.</p></div>
+          <div class="spec"><strong>How does it trade?</strong><p>Orders go through FIX on the same demo account. Not through Open API.</p></div>
+          <div class="spec"><strong>Why Open API?</strong><p>FIX gives positions and prices. Open API gives cash balance for true equity.</p></div>
+          <div class="spec"><strong>Broker</strong><p>IC Markets demo via cTrader. Account used for research only.</p></div>
+          <div class="spec"><strong>Hosting</strong><p>Private Azure VM. Dashboard for owner access only.</p></div>
+          <div class="spec"><strong>App contact</strong><p>Abbas Alabura<br>Phone: <a href="tel:+447047886919" style="color: var(--link);">07047886919</a><br>Email: <a href="mailto:abbas.alabura@gmail.com" style="color: var(--link);">abbas.alabura@gmail.com</a></p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-tight">
+      <div class="container">
+        <div class="card-grid reveal">
+          <article class="feature-card">
+            <div class="feature-visual">
+              <img src="/assets/eris-dashboard.png" alt="Eris demo trading dashboard">
+            </div>
+            <div class="feature-body">
+              <h3>Demo only</h3>
+              <p>All live tests run on demo funds. No client money. No investment advice.</p>
+            </div>
+          </article>
+          <article class="feature-card">
+            <div class="feature-visual">
+              <img src="/assets/feature-python-engine.png" alt="Private server and credentials">
+            </div>
+            <div class="feature-body">
+              <h3>Keys stay private</h3>
+              <p>API tokens and FIX credentials live in server env files. Never shown in the UI.</p>
+            </div>
+          </article>
+          <article class="feature-card" id="contact">
+            <div class="feature-visual">
+              <img src="/assets/feature-live-data.png" alt="Contact AbbasStack about Eris">
+            </div>
+            <div class="feature-body">
+              <h3>Questions?</h3>
+              <p>Contact Abbas Alabura about the Eris Open API app or this page.<br>Phone: <a href="tel:+447047886919" style="color: var(--link);">07047886919</a><br>Email: <a href="mailto:abbas.alabura@gmail.com" style="color: var(--link);">abbas.alabura@gmail.com</a></p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-tight" id="privacy">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Privacy note</p>
+          <h2 class="display-md">Simple and clear</h2>
+        </div>
+        <div class="faq reveal">
+          <details open>
+            <summary>Does Eris share my data?</summary>
+            <p>No. Data stays on the private server and cTrader demo account. No resale. No ads.</p>
+          </details>
+          <details>
+            <summary>Can other people log in?</summary>
+            <p>No. This is a single-owner research tool. There is no multi-user product.</p>
+          </details>
+          <details>
+            <summary>Why is this page public?</summary>
+            <p>It explains the Eris Open API app for review and for anyone checking what the project does.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-bottom" style="margin-top: 0; padding-top: 0; border-top: none;">
+      <span>© 2026 AbbasStack · Eris research project</span>
+      <a href="mailto:abbas.alabura@gmail.com" class="mono">abbas.alabura@gmail.com</a>
+    </div>
+  </footer>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>
